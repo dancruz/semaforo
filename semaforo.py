@@ -1,18 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <math.h>
-#include <windows.h>
-
-# import only system from os 
 from os import system, name 
-  
-# import sleep to show output for some time period 
 from time import sleep
-
 import random
 
-# define our clear function 
+# define our clear function https://www.geeksforgeeks.org/clear-screen-python/
 def clear(): 
 	# for windows 
 	if name == 'nt': 
@@ -109,7 +99,7 @@ def semaforo():
 			car8 = random.randint(0, 7) + car8
 	return			
 
-print("Semaforo en Python\n\nDaniel Cruz")
+print("Semaforo en Python\n")
 print("\nPresione para iniciar")
 input()
 clear()
